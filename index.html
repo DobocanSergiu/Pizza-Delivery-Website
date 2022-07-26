@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+<title>Mamamia Pizzeria</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Amatic+SC">
+<style>
+body, html {height: 100%}
+body,h1,h2,h3,h4,h5,h6 {font-family: "Amatic SC", sans-serif}
+.menu {display: none}
+.bgimg {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("PIZZA.JPG");
+  min-height: 90%;
+}
+</style>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top w3-hide-small">
+  <div class="w3-bar w3-xlarge w3-black w3-opacity w3-hover-opacity-off" id="myNavbar">
+    <a href="#" class="w3-bar-item w3-button">HOME</a>
+    <a href="#menu" class="w3-bar-item w3-button">MENIU</a>
+    <a href="#about" class="w3-bar-item w3-button">DESPRE NOI</a>
+    <a href="#myMap" class="w3-bar-item w3-button">CONTACT</a>
+	<a href="#myOnline" class="w3-bar-item w3-button">COMANDA ONLINE</a>
+	<a href="#myRezervari" class="w3-bar-item w3-button">REZERVARI ONLINE</a>
+	
+  </div>
+</div>
+  
+<!-- Sectiunea Home -->
+<header class="bgimg w3-display-container" id="home">
+  <div class="w3-display-bottomleft w3-padding">
+    <span class="w3-tag w3-xlarge">Strada Horea 25, Targu Mures</span>
+  </div>
+  <div class="w3-display-middle w3-center">
+    <span class="w3-text-black w3-hide-small" style="font-size:150px"><b>PIZZERIA MAMAMIA</b></span>
+    <p><a href="#menu" class="w3-button w3-xxlarge w3-black">MENIU</a></p>
+  </div>
+</header>
+
+<!-- Sectiunea Meniu -->
+<div class="w3-container w3-black w3-padding-64 w3-xxlarge" id="menu">
+  <div class="w3-content">
+  
+    <h1 class="w3-center w3-jumbo" style="margin-bottom:64px">MENIU</h1>
+    <div class="w3-row w3-center w3-border w3-border-dark-grey">
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Pizza');" id="myLink">
+        <div class="w3-col s4 tablink w3-padding-large w3-hover-red">Pizza</div>
+      </a>
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Pasta');">
+        <div class="w3-col s4 tablink w3-padding-large w3-hover-red">Paste</div>
+      </a>
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Starter');">
+        <div class="w3-col s4 tablink w3-padding-large w3-hover-red">Aperitive</div>
+      </a>
+    </div>
+
+    <div id="Pizza" class="w3-container menu w3-padding-32 w3-white">
+      <h1><b>Margherita</b> <span class="w3-right w3-tag w3-dark-grey w3-round">30 lei</span></h1>
+      <p class="w3-text-grey">Sos de Rosii, mozzarella, busuioc</p>
+      <hr>
+   
+      <h1><b>Quatro formaggi</b> <span class="w3-right w3-tag w3-dark-grey w3-round">25 lei</span></h1>
+      <p class="w3-text-grey">Mozzarella, Parmesan, Pecorino, Jarlsberg</p>
+      <hr>
+      
+      <h1><b>Pui</b> <span class="w3-right w3-tag w3-dark-grey w3-round">35 lei</span></h1>
+      <p class="w3-text-grey">Sos de Rosii, mozzarella, pui, ceapa</p>
+      <hr>
+
+      <h1><b>Hawaii</b> <span class="w3-right w3-tag w3-dark-grey w3-round">40 lei</span></h1>
+      <p class="w3-text-grey">Sos de Rosii, mozzarella, ananas, sunca, busuioc</p>
+      <hr>
+
+      <h1><b>Prosciutto</b> <span class="w3-tag w3-red w3-round">Iute!</span><span class="w3-right w3-tag w3-dark-grey w3-round">36 lei</span></h1>
+      <p class="w3-text-grey">Sos de rosii, mozzarella, sunca, oregano</p>
+      <hr>
+
+      <h1><b>Diavola</b> <span class="w3-tag w3-grey w3-round">NOU!</span><span class="w3-right w3-tag w3-dark-grey w3-round">35 lei</span></h1>
+      <p class="w3-text-grey">Sos de rosii, mozzarella, salam, oregano, ardei iute</p>
+    </div>
+
+    <div id="Pasta" class="w3-container menu w3-padding-32 w3-white">
+      <h1><b>Lasagna</b>  <span class="w3-right w3-tag w3-dark-grey w3-round">45 lei</span></h1>
+      <p class="w3-text-grey">parmezan, mozzarella, vita</p>
+      <hr>
+   
+      <h1><b>Ravioli</b> <span class="w3-right w3-tag w3-dark-grey w3-round">20 lei</span></h1>
+      <p class="w3-text-grey">Ravioli cu branza</p>
+      <hr>
+      
+      <h1><b>Paste Clasice</b> <span class="w3-right w3-tag w3-dark-grey w3-round">20 lei</span></h1>
+      <p class="w3-text-grey">Rosii,ceapa,vita</p>
+      <hr>
+
+      <h1><b>Paste cu fructe de mare </b> <span class="w3-right w3-tag w3-dark-grey w3-round">50 lei</span></h1>
+      <p class="w3-text-grey">somon, creveti, scoici, usturoi</p>
+    </div>
+
+
+    <div id="Starter" class="w3-container menu w3-padding-32 w3-white">
+      <h1><b>Supa zilei</b> <span class="w3-right w3-tag w3-dark-grey w3-round">22 lei</span></h1>
+      <p class="w3-text-grey">Intreaba chelnerul</p>
+      <hr>
+   
+      <h1><b>Bruschetta</b> <span class="w3-right w3-tag w3-dark-grey w3-round">10 lei</span></h1>
+      <p class="w3-text-grey"> rosii, usturoi, ceapa</p>
+      <hr>
+      
+      <h1><b>Garlic bread</b> <span class="w3-right w3-tag w3-dark-grey w3-round">10 lei</span></h1>
+      <p class="w3-text-grey">unt, usturoi, ceapa</p>
+      <hr>
+      
+      <h1><b>Tomozzarella</b> <span class="w3-right w3-tag w3-dark-grey w3-round">10 lei</span></h1>
+      <p class="w3-text-grey">Rosii, Mozzarella</p>
+    </div><br>
+
+  </div>
+</div>
+
+<!-- Sectiunea despre noi -->
+<div class="w3-container w3-padding-64 w3-red w3-grayscale w3-xlarge" id="about">
+  <div class="w3-content">
+    <h1 class="w3-center w3-jumbo" style="margin-bottom:64px">Despre Noi</h1>
+    <p>Mamamia Pizzeria a fost fondata in anul 1995 de catre Giordano Russo din pasiunea sa pentru gatit </p>
+    <p><strong>Chef</strong> Giordano Russo<img src="chef.png" style="width:300px" class="w3-circle w3-right" alt="Chef"></p>
+    <p>Interior</p>
+    <img src="RESTAURANT2.jpg" style="width:100%" class="w3-margin-top w3-margin-bottom" alt="Restaurant">
+    <h1><b>ORAR</b></h1>
+    
+    <div class="w3-row">
+      <div class="w3-col s6">
+        <p>Luni & Marti INCHIS</p>
+        <p>Miercuri 10:00 - 23:00</p>
+        <p>Joi 10:00 - 23:00</p>
+      </div>
+      <div class="w3-col s6">
+        <p>Vineri 10:00 - 23:00</p>
+        <p>Sambata 10:00 - 23:00</p>
+        <p>Duminica Inchis</p>
+      </div>
+    </div>
+    
+  </div>
+</div>
+
+<!-- Imagine restaurant -->
+<img src="RESTAURANT.jpg" class="w3-image w3-greyscale" style="width:100%;" >
+
+<!-- COMANDA -->
+<div class="w3-container w3-padding-64 w3-blue-grey w3-grayscale-min w3-xlarge" id="myMap">
+  <div class="w3-content">
+    <h1 class="w3-center w3-jumbo" style="margin-bottom:64px">Contact</h1>
+    <p>  <font size="+5">TEL: 0748765442 <br> EMAIL: CONTACT@MAMAMIAPIZZERIA.COM</font></p>
+	<div id="myOnline">
+    <p class="w3-xxlarge"><strong>COMANDA ONLINE</strong></p>
+    <form action="inregistrarepizza.php" method="POST">
+      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Nume" name="Name" value=""></p>
+      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Adresa" name="Adress" value=""></p>
+	  <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Comanda"  name="Comanda" value=""></p>
+      
+      <p><button class="w3-button w3-light-grey w3-block" type="submit">TRIMITE</button></p>
+    </form>
+	</div>
+  </div>
+</div>
+<!-- REZERVARI -->
+<div class="w3-container w3-padding-64 w3-blue-grey w3-grayscale-min w3-xlarge" id="myRezervari">
+  <div class="w3-content">
+    <p class="w3-xxlarge"><strong>REZERVARI ONLINE</strong></p>
+    <form action="inregistrarepizzarezervari.php" method="POST">
+      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Nume" name="Name" value=""></p>
+      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Numar de persoane" name="nrdepers" value=""></p>
+	  <p><input class="w3-input w3-padding-16 w3-border" type="date" placeholder="Data"  name="Data" value=""></p>
+	  <p><input class="w3-input w3-padding-16 w3-border" type="time" placeholder="Ora"  name="Time" value=""></p>
+      
+      <p><button class="w3-button w3-light-grey w3-block" type="submit">TRIMITE</button></p>
+    </form>
+  </div>
+</div>
+
+
+
+<script>
+// Tabbed Menu
+function openMenu(evt, menuName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("menu");
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < x.length; i++) {
+     tablinks[i].className = tablinks[i].className.replace(" w3-red", "");
+  }
+  document.getElementById(menuName).style.display = "block";
+  evt.currentTarget.firstElementChild.className += " w3-red";
+}
+document.getElementById("myLink").click();
+</script>
+
+</body>
+</html>
